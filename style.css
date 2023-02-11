@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 234, 220);
+}
+
+#input-container {
+  margin: 5% 20% 0% 20%;
+  text-align: center;
+  border: 2px solid #17161b;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#user-input {
+  width: 90%;
+}
+
+#convert-btn {
+  margin-top: 5%;
+  padding: 2% 10% 2% 10%;
+  border: 2px solid #ffb13a;
+  border-radius: 5px;
+  background-color: #ffb13a;
+}
+
+#container {
+  margin: 5% 20% 5% 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.item {
+  border: 2px solid #17161b;
+  text-align: center;
+  flex: 1;
+  font-size: medium;
+  border-radius: 10px;
+}
+
+@keyframes item-anim {
+  from {
+    font-size: medium;
+  }
+  to {
+    font-size: larger;
+    font-weight: bold;
+    background-color: #ffb13a;
+    border-radius: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.item:hover {
+  animation-name: item-anim;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btn-anim {
+  from {
+    padding: 2% 10% 2% 10%;
+    border: 2px solid #ffb13a;
+    border-radius: 5px;
+    background-color: #ffb13a;
+  }
+  to {
+    padding: 2% 15% 2% 15%;
+    border-radius: 15px;
+    background-color: #6ea43c;
+    border: 2px solid #6ea43c;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+#convert-btn:hover {
+  animation-name: btn-anim;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
